@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Post from '../components/Post';
 import { gql, GraphQLClient } from 'graphql-request';
 import { sortByDate } from '../utils/utils';
+import React from 'react';
 
 export async function getServerSideProps() {
   const url = `${process.env.ENDPOINT_BASE_URL}/graphql`;
